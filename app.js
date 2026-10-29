@@ -163,7 +163,7 @@ pdf.line(X(555), Y(575), X(1280), Y(575));
 pdf.setFontSize(15);
 pdf.text(
     String(student.schoolname || ""),
-    X(570),
+    X(500),
     Y(568),
     { align: "left", maxWidth: X(400) }
 );
