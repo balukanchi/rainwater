@@ -153,22 +153,20 @@ async function downloadCertificate(student, button) {
 
         // School name: cover the preprinted school line/text so the
         // actual student's school name can be printed in its place.
-        pdf.setFillColor(255, 254, 246);
-        //pdf.rect(X(550), Y(539), X(740), Y(43), "F");
-        pdf.rect(X(550), Y(539), X(430), Y(43), "F");
+pdf.setFillColor(255, 254, 246);
+pdf.rect(X(550), Y(539), X(430), Y(43), "F");
 
-        pdf.setDrawColor(30, 35, 55);
-        pdf.setLineWidth(0.25);
-        pdf.line(X(555), Y(575), X(1280), Y(575));
+pdf.setDrawColor(30, 35, 55);
+pdf.setLineWidth(0.25);
+pdf.line(X(555), Y(575), X(1280), Y(575));
 
-        pdf.setFontSize(13);
-        pdf.text(
-            String(student.schoolname || ""),
-            X(915),
-            Y(568),
-            { align: "left", maxWidth: X(700) }
-        );
-
+pdf.setFontSize(19);
+pdf.text(
+    String(student.schoolname || ""),
+    X(570),
+    Y(568),
+    { align: "left", maxWidth: X(400) }
+);
         // Issue date
         pdf.setFontSize(13);
         pdf.text(
