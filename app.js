@@ -160,7 +160,7 @@ pdf.setDrawColor(30, 35, 55);
 pdf.setLineWidth(0.25);
 pdf.line(X(555), Y(575), X(1280), Y(575));
 
-pdf.setFontSize(19);
+pdf.setFontSize(15);
 pdf.text(
     String(student.schoolname || ""),
     X(570),
