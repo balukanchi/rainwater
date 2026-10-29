@@ -154,7 +154,8 @@ async function downloadCertificate(student, button) {
         // School name: cover the preprinted school line/text so the
         // actual student's school name can be printed in its place.
         pdf.setFillColor(255, 254, 246);
-        pdf.rect(X(550), Y(539), X(740), Y(43), "F");
+        //pdf.rect(X(550), Y(539), X(740), Y(43), "F");
+        pdf.rect(X(550), Y(539), X(430), Y(43), "F");
 
         pdf.setDrawColor(30, 35, 55);
         pdf.setLineWidth(0.25);
