@@ -166,7 +166,7 @@ async function downloadCertificate(student, button) {
             String(student.schoolname || ""),
             X(915),
             Y(568),
-            { align: "center", maxWidth: X(700) }
+            { align: "left", maxWidth: X(700) }
         );
 
         // Issue date
